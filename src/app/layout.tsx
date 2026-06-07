@@ -8,8 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Prompsy - Waitlist",
-  description: "Join the waitlist for Prompsy, the ultimate AI prompt enhancement tool.",
+  title: "Prompsy — Prompt Engineering, Elevated.",
+  description:
+    "Prompsy is a background desktop app that transforms your rough ideas into expert-level AI prompts with a single hotkey. BYOK. No middleman. Windows Beta available now.",
 };
 
 export default function RootLayout({
@@ -21,8 +22,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} font-sans h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>{children}</body>
     </html>
   );
 }
