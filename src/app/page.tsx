@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: "The Problem", href: "#problem" },
   { label: "Workflow", href: "#solution" },
   { label: "BYOK", href: "#byok" },
+  { label: "Post a Review", href: "/review" },
 ];
 
 const INPUT_FULL_TEXT = "write a python function to check if string is palindrome but ignore punctuation";
@@ -516,6 +517,7 @@ export default function Home() {
                   <a href="#solution" className="text-white/60 hover:text-white text-sm transition-colors">Workflow</a>
                   <a href="#byok" className="text-white/60 hover:text-white text-sm transition-colors">BYOK</a>
                   <Link href="/download" className="text-white/60 hover:text-white text-sm transition-colors">Download Beta</Link>
+                  <Link href="/review" className="text-white/60 hover:text-white text-sm transition-colors">Post a Review</Link>
                 </div>
                 <div className="flex flex-col gap-2.5">
                   <span className="text-white/30 text-[11px] font-bold uppercase tracking-widest">Legal</span>
