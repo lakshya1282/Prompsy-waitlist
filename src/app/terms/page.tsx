@@ -18,7 +18,7 @@ const sections = [
   {
     id: "description",
     title: "2. Description of Service",
-    body: `Prompsy is an AI-powered desktop utility that enhances text prompts using artificial intelligence. The App operates in the background and is triggered via a user-defined global hotkey. The enhanced prompt is then returned to the user via clipboard, auto-paste, or a floating overlay. Prompsy is currently in Beta, meaning features may be incomplete, unstable, or change without notice.`,
+    body: `Prompsy is an AI-powered desktop utility that enhances text prompts using artificial intelligence. The App operates in the background and is triggered via a user-defined global hotkey. The enhanced prompt is then returned to the user via clipboard, auto-paste, or a floating overlay.`,
   },
   {
     id: "eligibility",
@@ -27,8 +27,8 @@ const sections = [
   },
   {
     id: "account",
-    title: "4. Account & Beta Access",
-    body: `Beta access to Prompsy is granted by invitation only. We reserve the right to grant, suspend, or revoke beta access at our sole discretion without notice or liability. You are responsible for maintaining the confidentiality of your account credentials. You agree to notify us immediately at support@prompsy.app if you become aware of any unauthorised use of your account.`,
+    title: "4. Account",
+    body: `You are responsible for maintaining the confidentiality of your account credentials. You agree to notify us immediately at support@prompsy.app if you become aware of any unauthorised use of your account. We reserve the right to suspend or revoke access at our sole discretion if we suspect abuse or violations of these Terms.`,
   },
   {
     id: "subscriptions",
@@ -68,7 +68,7 @@ const sections = [
   {
     id: "disclaimer",
     title: "12. Disclaimer of Warranties",
-    body: `Prompsy is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components. This is particularly applicable during the Beta period.`,
+    body: `Prompsy is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components.`,
   },
   {
     id: "governing-law",
@@ -79,6 +79,11 @@ const sections = [
     id: "contact",
     title: "14. Contact",
     body: `For any questions about these Terms, please contact us at: support@prompsy.app. We aim to respond within 5 business days.`,
+  },
+  {
+    id: "modifications",
+    title: "15. Modifications to Terms",
+    body: `We can change the terms and conditions at any time without prior notice. Your continued use of the App following any such changes constitutes your acceptance of the new Terms.`,
   },
 ];
 
@@ -164,8 +169,6 @@ export default function TermsOfServicePage() {
           <Link href="/privacy-policy" className="text-xs text-[#8b5cf6] hover:underline font-medium">Privacy Policy</Link>
           <span className="text-[#ccc] text-xs">·</span>
           <Link href="/refund-policy" className="text-xs text-[#8b5cf6] hover:underline font-medium">Refund Policy</Link>
-          <span className="text-[#ccc] text-xs">·</span>
-          <Link href="/beta-disclaimer" className="text-xs text-[#8b5cf6] hover:underline font-medium">Beta Disclaimer</Link>
         </div>
       </main>
 

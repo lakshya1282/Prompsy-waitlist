@@ -20,11 +20,7 @@ const sections = [
     title: "2. Subscription Plans",
     body: `Prompsy offers the following subscription tiers: a Free plan with limited daily enhancements at no cost, and a Pro plan with unlimited enhancements, all enhancement modes, prompt history, custom templates, and priority support — billed monthly or annually. All prices are listed in Indian Rupees (INR) and are inclusive of applicable GST unless stated otherwise at the time of purchase.`,
   },
-  {
-    id: "beta-note",
-    title: "3. Beta Period — Special Note",
-    body: `Prompsy is currently in Beta. During the beta period, we may offer discounted or complimentary access. Paid subscriptions taken during beta are subject to the same refund policy outlined below. We appreciate your early support and will endeavour to be generous in our refund decisions during this phase.`,
-  },
+
   {
     id: "refund-eligibility",
     title: "4. Refund Eligibility",
@@ -182,8 +178,6 @@ export default function RefundPolicyPage() {
           <Link href="/privacy-policy" className="text-xs text-[#8b5cf6] hover:underline font-medium">Privacy Policy</Link>
           <span className="text-[#ccc] text-xs">·</span>
           <Link href="/terms" className="text-xs text-[#8b5cf6] hover:underline font-medium">Terms of Service</Link>
-          <span className="text-[#ccc] text-xs">·</span>
-          <Link href="/beta-disclaimer" className="text-xs text-[#8b5cf6] hover:underline font-medium">Beta Disclaimer</Link>
         </div>
       </main>
 

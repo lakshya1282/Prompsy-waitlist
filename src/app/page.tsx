@@ -112,7 +112,7 @@ export default function Home() {
             href="/download"
             className="ml-auto bg-white text-[#111111] text-sm font-bold px-6 py-2.5 rounded-full hover:bg-white/90 transition-all shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            Download Beta
+            Download
           </Link>
         </nav>
       </header>
@@ -126,10 +126,9 @@ export default function Home() {
           
           {/* Left Column: Texts and CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            {/* Flat Beta pill badge */}
             <div className="border border-black/15 bg-white/70 text-[#111111] px-5 py-2 rounded-full text-xs font-bold tracking-widest mb-8 flex items-center gap-2.5 uppercase shadow-sm">
               <span className="w-2 h-2 bg-emerald-500 rounded-full" />
-              Beta Windows Release
+              Windows Release
             </div>
 
             <h1 className="text-[36px] md:text-[48px] lg:text-[56px] font-bold text-[#111111] tracking-tight leading-[1.1] mb-6">
@@ -153,8 +152,8 @@ export default function Home() {
                 <svg className="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
-                Download Beta for Windows
-                <span className="text-white/40 font-normal text-xs">v0.1.0</span>
+                Download for Windows
+                <span className="text-white/40 font-normal text-xs">v0.9.0</span>
               </Link>
               <a
                 href="#problem"
@@ -477,7 +476,7 @@ export default function Home() {
               Prompt smarter, natively.
             </h2>
             <p className="text-[#555555] text-lg md:text-xl mb-10 font-medium leading-relaxed max-w-xl">
-              Download the Prompsy Beta for Windows. No account registration, no telemetry, and direct local key execution.
+              Download Prompsy for Windows. No account registration, no telemetry, and direct local key execution.
             </p>
             <Link
               href="/download"
@@ -486,9 +485,9 @@ export default function Home() {
               <svg className="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
-              Download Beta for Windows
+              Download for Windows
             </Link>
-            <p className="text-xs md:text-sm text-[#999] mt-5 font-semibold">Windows 10/11 · 64-bit · Beta v0.1.0</p>
+            <p className="text-xs md:text-sm text-[#999] mt-5 font-semibold">Windows 10/11 · 64-bit · v0.9.0</p>
           </div>
         </div>
       </section>
@@ -516,7 +515,7 @@ export default function Home() {
                   <a href="#problem" className="text-white/60 hover:text-white text-sm transition-colors">The Problem</a>
                   <a href="#solution" className="text-white/60 hover:text-white text-sm transition-colors">Workflow</a>
                   <a href="#byok" className="text-white/60 hover:text-white text-sm transition-colors">BYOK</a>
-                  <Link href="/download" className="text-white/60 hover:text-white text-sm transition-colors">Download Beta</Link>
+                  <Link href="/download" className="text-white/60 hover:text-white text-sm transition-colors">Download</Link>
                   <Link href="/review" className="text-white/60 hover:text-white text-sm transition-colors">Post a Review</Link>
                 </div>
                 <div className="flex flex-col gap-2.5">
@@ -524,7 +523,6 @@ export default function Home() {
                   <Link href="/privacy-policy" className="text-white/60 hover:text-white text-sm transition-colors">Privacy Policy</Link>
                   <Link href="/terms" className="text-white/60 hover:text-white text-sm transition-colors">Terms of Service</Link>
                   <Link href="/refund-policy" className="text-white/60 hover:text-white text-sm transition-colors">Refund Policy</Link>
-                  <Link href="/beta-disclaimer" className="text-white/60 hover:text-white text-sm transition-colors">Beta Disclaimer</Link>
                 </div>
                 <div className="flex flex-col gap-2.5">
                   <span className="text-white/30 text-[11px] font-bold uppercase tracking-widest">Contact</span>
@@ -535,7 +533,7 @@ export default function Home() {
             </div>
             <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-white/25 text-sm font-semibold">© {new Date().getFullYear()} Prompsy. All rights reserved.</p>
-              <p className="text-white/25 text-sm font-semibold">Made in India · Beta v0.1.0</p>
+              <p className="text-white/25 text-sm font-semibold">Made in India · v0.9.0</p>
             </div>
           </div>
         </footer>

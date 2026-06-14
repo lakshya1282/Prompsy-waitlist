@@ -225,8 +225,6 @@ export default function PrivacyPolicyPage() {
           <Link href="/terms" className="text-xs text-[#8b5cf6] hover:underline font-medium">Terms of Service</Link>
           <span className="text-[#ccc] text-xs">·</span>
           <Link href="/refund-policy" className="text-xs text-[#8b5cf6] hover:underline font-medium">Refund Policy</Link>
-          <span className="text-[#ccc] text-xs">·</span>
-          <Link href="/beta-disclaimer" className="text-xs text-[#8b5cf6] hover:underline font-medium">Beta Disclaimer</Link>
         </div>
       </main>
 

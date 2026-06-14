@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Prompsy — Prompt Engineering, Elevated.",
   description:
-    "Prompsy is a background desktop app that transforms your rough ideas into expert-level AI prompts with a single hotkey. BYOK. No middleman. Windows Beta available now.",
+    "Prompsy is a background desktop app that transforms your rough ideas into expert-level AI prompts with a single hotkey. BYOK. No middleman. Windows release available now.",
 };
 
 export default function RootLayout({

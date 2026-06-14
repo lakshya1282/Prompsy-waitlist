@@ -76,7 +76,7 @@ export default function ReviewPage() {
             href="/download"
             className="ml-auto bg-white text-[#111111] text-sm font-bold px-6 py-2.5 rounded-full hover:bg-white/90 transition-all shadow-sm"
           >
-            Download Beta
+            Download
           </Link>
         </nav>
       </header>
@@ -157,7 +157,6 @@ export default function ReviewPage() {
               <p className="text-xs font-bold text-[#111] uppercase tracking-widest mb-4">Quick Links</p>
               <div className="flex flex-col gap-2">
                 {[
-                  { label: "Beta Disclaimer", href: "/beta-disclaimer" },
                   { label: "Privacy Policy", href: "/privacy-policy" },
                   { label: "Refund Policy", href: "/refund-policy" },
                   { label: "Terms of Service", href: "/terms" },
@@ -371,7 +370,7 @@ export default function ReviewPage() {
           <div className="max-w-[1400px] w-full mx-auto">
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
               <p className="text-white/25 text-sm font-semibold">© {new Date().getFullYear()} Prompsy. All rights reserved.</p>
-              <p className="text-white/25 text-sm font-semibold">Made in India · Beta v0.1.0</p>
+              <p className="text-white/25 text-sm font-semibold">Made in India · v0.9.0</p>
             </div>
           </div>
         </footer>

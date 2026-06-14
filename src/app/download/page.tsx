@@ -14,15 +14,13 @@ export default function DownloadPage() {
   const [modal, setModal] = useState<DownloadIntent | null>(null);
   const [agreedTerms, setAgreedTerms] = useState(false);
   const [agreedPrivacy, setAgreedPrivacy] = useState(false);
-  const [agreedBeta, setAgreedBeta] = useState(false);
   const [downloadStarted, setDownloadStarted] = useState<Format | null>(null);
 
-  const allAgreed = agreedTerms && agreedPrivacy && agreedBeta;
+  const allAgreed = agreedTerms && agreedPrivacy;
 
   const openModal = (format: Format) => {
     setAgreedTerms(false);
     setAgreedPrivacy(false);
-    setAgreedBeta(false);
     setModal({ format });
   };
 
@@ -90,15 +88,14 @@ export default function DownloadPage() {
         {/* Main */}
         <main className="flex-1 flex flex-col items-center w-full max-w-4xl px-6 text-center z-10 relative py-14">
           
-          {/* Badge */}
           <div className="border border-black/15 bg-white/70 text-[#111111] px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest mb-8 flex items-center gap-2 uppercase shadow-sm">
             <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full" />
-            Beta Download — Windows
+            Download — Windows
           </div>
 
           {/* Title */}
           <h1 className="text-[38px] md:text-[54px] font-extrabold text-[#111111] tracking-tight mb-4 leading-[1.1]">
-            Download <span className="text-[#8b5cf6]">Prompsy Beta</span>
+            Download <span className="text-[#8b5cf6]">Prompsy</span>
           </h1>
           <p className="text-base text-[#666] max-w-xl mb-12 font-medium leading-relaxed">
             Choose your Windows installer. Both install the same app — pick the one you're more comfortable with.
@@ -166,7 +163,6 @@ export default function DownloadPage() {
               Installation Notes
             </h3>
             <ul className="space-y-2 text-xs text-[#666] leading-relaxed">
-              <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold shrink-0">·</span> This is a Beta release — some features may be incomplete or unstable.</li>
               <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold shrink-0">·</span> Windows SmartScreen may show a warning. Click <strong>"More Info" → "Run Anyway"</strong> to proceed safely.</li>
               <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold shrink-0">·</span> Prompsy requires clipboard and global hotkey access to function. Grant permissions when prompted.</li>
               <li className="flex gap-2"><span className="text-[#8b5cf6] font-bold shrink-0">·</span> You'll need your own API key from OpenAI, Anthropic, or Google (BYOK model).</li>
@@ -187,8 +183,6 @@ export default function DownloadPage() {
               <Link href="/terms" className="text-white/50 hover:text-white/80 text-xs font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded">Terms of Service</Link>
               <span className="text-white/20 text-xs">·</span>
               <Link href="/refund-policy" className="text-white/50 hover:text-white/80 text-xs font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded">Refund Policy</Link>
-              <span className="text-white/20 text-xs">·</span>
-              <Link href="/beta-disclaimer" className="text-white/50 hover:text-white/80 text-xs font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white rounded">Beta Disclaimer</Link>
             </div>
             <p className="text-white/25 text-[11px]">© {new Date().getFullYear()} Prompsy. All rights reserved.</p>
           </footer>
@@ -224,7 +218,7 @@ export default function DownloadPage() {
               </div>
               <h2 className="text-xl font-extrabold text-[#111111] tracking-tight">Before You Download</h2>
               <p className="text-sm text-[#666] mt-2 leading-relaxed">
-                Please read and agree to the following before downloading the Prompsy Beta (.{modal.format}).
+                Please read and agree to the following before downloading Prompsy (.{modal.format}).
               </p>
             </div>
 
@@ -292,39 +286,6 @@ export default function DownloadPage() {
                     Privacy Policy
                   </Link>
                   , including clipboard access disclosure
-                </span>
-              </label>
-
-              {/* Beta */}
-              <label className="flex items-start gap-3 cursor-pointer group">
-                <div className="relative mt-0.5 shrink-0">
-                  <input
-                    type="checkbox"
-                    id="agree-beta"
-                    checked={agreedBeta}
-                    onChange={(e) => setAgreedBeta(e.target.checked)}
-                    className="peer sr-only"
-                  />
-                  <div
-                    className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-all peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-[#8b5cf6] ${
-                      agreedBeta
-                        ? "bg-[#8b5cf6] border-[#8b5cf6]"
-                        : "border-[#ccc] bg-white group-hover:border-[#8b5cf6]"
-                    }`}
-                  >
-                    {agreedBeta && (
-                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    )}
-                  </div>
-                </div>
-                <span className="text-sm text-[#444] leading-snug">
-                  I understand this is a{" "}
-                  <Link href="/beta-disclaimer" target="_blank" className="text-[#8b5cf6] hover:underline font-semibold focus-visible:outline-none">
-                    Beta release
-                  </Link>
-                  {" "}and may contain bugs or incomplete features
                 </span>
               </label>
             </div>
